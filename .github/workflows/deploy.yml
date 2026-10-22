@@ -36,7 +36,7 @@ jobs:
 
       # Bunを使って依存関係をインストール
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       # プロダクションビルドを実行
       - name: Build production app
