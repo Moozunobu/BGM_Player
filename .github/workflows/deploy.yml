@@ -28,17 +28,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      # Bunのセットアップ環境を構築
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
-          cache: 'npm'
+          bun-version: latest
 
+      # Bunを使って依存関係をインストール
       - name: Install dependencies
-        run: npm install
+        run: bun install --frozen-lockfile
 
+      # プロダクションビルドを実行
       - name: Build production app
-        run: npm run build
+        run: bun run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
