@@ -1,6 +1,0 @@
-{
-  "name": "FestCue - 文化祭BGM・音響ポン出しコンソール",
-  "description": "文化祭やステージイベントの音響・BGM・効果音（ポン出し）を直感的に整理・再生できるPAコンソール。キーボード操作、フェードアウト、キュー進行表、プリセット音源完備。",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
